@@ -1,0 +1,48 @@
+# Override global gitignore rules to allow AI workspace folders
+# This is a permissive gitignore that allows most content to be committed
+
+# Allow all AI workspace folders and their contents
+!ai-workspace/
+!ai-workspace/**
+!for-ai/
+!for-ai/**
+!from-ai/
+!from-ai/**
+
+# Standard exclusions (only essential ones)
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files (optional - remove if you want to commit these)
+.vscode/settings.json
+.idea/workspace.xml
+.idea/tasks.xml
+
+# Environment files with secrets
+.env.local
+.env.production
+**/secrets.json
+**/api-keys.json
+
+# Large binary files
+*.iso
+*.dmg
+*.exe
+*.msi
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Log files that might contain sensitive data
+*.log
+!debug.log
+!session.log
+!development.log
